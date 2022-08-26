@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh '''
                    build_num=${BUILD_NUMBER}
-                   ssh -i ./ssh/id_rsa jenkins@18.169.17.202 << EOF
+                   ssh -i ~/./ssh/id_rsa jenkins@18.169.17.202 << EOF
                    echo '[Unit]
 Description=SpringBoot App
 
