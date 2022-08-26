@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                ssh -i ~/./ssh/id_rsa jenkins@13.42.38.90 << EOF
+                ssh -i ~/./ssh/id_rsa jenkins@13.41.108.233 << EOF
                 git clone https://github.com/DanyelHarrison/Spring-ToDo.git
                 cd Spring-ToDo
                 git checkout development
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh '''
                    build_num=${BUILD_NUMBER}
-                   ssh -i ~/./ssh/id_rsa jenkins@13.42.38.90 << EOF
+                   ssh -i ~/./ssh/id_rsa jenkins@13.41.108.233 << EOF
                    echo '[Unit]
 Description=SpringBoot App
 
