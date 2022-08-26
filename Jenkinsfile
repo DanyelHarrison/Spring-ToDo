@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                ssh -i ./ssh/id_rsa jenkins@18.169.17.202 << EOF
+                ssh -i ~/./ssh/id_rsa jenkins@18.169.17.202 << EOF
                 git clone https://github.com/DanyelHarrison/Spring-ToDo.git
                 cd Spring-ToDo
                 git checkout development
